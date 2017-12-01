@@ -21,8 +21,11 @@ public class Board {
 	}
 	
 	public boolean isLegalMove(int x1, int y1, int x2, int y2) {
-		//TODO
-		return true;
+		
+		if(intBoard[x1][y1] == 0 && intBoard[x2][y2] == 0)
+			return true;
+		else
+			return false;
 	}
 
 }
