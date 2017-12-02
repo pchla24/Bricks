@@ -5,9 +5,11 @@ import java.util.ArrayList;
 public class Board {
 	
 	int[][] intBoard;
+	int size;
 	
 	public void init(int size, ArrayList<Integer> obstacles) {
 		
+		this.size = size;
 		intBoard = new int[size][size];
 		
 		for(int i=0; i<size; i++){
@@ -26,6 +28,11 @@ public class Board {
 			return true;
 		else
 			return false;
+	}
+	
+	public int calculateBoardValue() {
+		//TODO
+		return 1;
 	}
 
 }
