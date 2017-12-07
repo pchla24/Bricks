@@ -7,6 +7,7 @@ public class Node {
 	public int moveX1, moveY1, moveX2, moveY2;
 	ArrayList<Node> children = new ArrayList<>();
 	Board board = new Board();
+	int moveValue;
 	int whoseMove;											// 1-me, 2-opponent
 	
 	public void generateChildren() {
@@ -52,8 +53,10 @@ public class Node {
 					}
 					children.add(node);
 				}
-		
-		
+	}
+	
+	public void setMoveValue() {
+		moveValue = board.calculateBoardValue();
 	}
 
 
