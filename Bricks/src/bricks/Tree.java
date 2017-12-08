@@ -20,9 +20,21 @@ public class Tree {
 		//metoda do wybierania kolejnego ruchu
 	}
 	
-	public void followMove() {
+	public void followMove(int x1, int y1, int x2, int y2) {
 		//TODO
 		//metoda do œledzenia ruchu przeciwnika
+		//do poprawienia
+		for(int i=0; i<root.children.size(); i++) {
+			if(root.children.get(i).moveX1 == x1 &&
+					root.children.get(i).moveY1 == y1 &&
+					root.children.get(i).moveX2 == x2 &&
+					root.children.get(i).moveY2 == y2) {
+				root = root.children.get(i);
+				root.generateChildren();
+				return;
+			}
+		}
+		
 	}
 	
 }
