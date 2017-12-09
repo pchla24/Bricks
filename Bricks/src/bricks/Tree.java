@@ -43,10 +43,6 @@ public class Tree {
 	} 
 			
 		
-		
-			
-	
-	
 	public void followMove(int x1, int y1, int x2, int y2) {
 		//metoda do œledzenia ruchu przeciwnika
 		//chyba do poprawienia
