@@ -11,10 +11,12 @@ public class Communicator {
 	
 	public void readInit(Scanner scanner) {
 		//TODO
-		//scanner jako argument - pewnie do poprawy
+		/*
+		scanner jako argument - pewnie do poprawy
 		size = scanner.nextInt();
 		while(scanner.hasNext())
 			obstacles.add(scanner.nextInt());
+		*/
 	}
 	
 	public void readOppMove(String str) {
