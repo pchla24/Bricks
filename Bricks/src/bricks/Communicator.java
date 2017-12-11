@@ -9,15 +9,33 @@ public class Communicator {
 	ArrayList<Integer> obstacles = new ArrayList<>();
 	
 	public void readInit(String str) {
-		//TODO
+		
+		String []parts = str.split("_");
+		String []subparts = new String[2];
+		size = Integer.valueOf(parts[0]);
+		for(int i=1; i<parts.length; i++) {
+			subparts = parts[i].split("x");
+			obstacles.add(Integer.valueOf(subparts[0]));
+			obstacles.add(Integer.valueOf(subparts[1]));
+		}
 	}
 	
 	public void readOppMove(String str) {
-		//TODO
+		
+		String[] parts = str.split("_");
+		String[] subparts = new String[2];
+		subparts = parts[0].split("x");
+		oppMoveX1 = Integer.valueOf(subparts[0]);
+		oppMoveY1 = Integer.valueOf(subparts[1]);
+		subparts = parts[1].split("x");
+		oppMoveX2 = Integer.valueOf(subparts[0]);
+		oppMoveY2 = Integer.valueOf(subparts[1]);
 	}
 	
 	public void writeMove(Node node) {
-		//TODO
+		
+		System.out.println(node.moveX1 + 'x' + node.moveY1 + '_' + 
+				node.moveX2 + 'x' + node.moveY2);
 	}
 
 }
