@@ -3,6 +3,7 @@ package bricks;
 public class Tree {
 
 	Node root = new Node();
+	MiniMax minimax = new MiniMax();
 	
 	public void generateLevel() {
 		
@@ -38,7 +39,7 @@ public class Tree {
 			}
 		
 		this.setValues();
-		//root = minimax(this);
+		root = minimax.doMinimax(this);
 	
 	} 
 			
