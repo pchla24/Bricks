@@ -34,5 +34,13 @@ public class Board {
 		//TODO
 		return 1;
 	}
+	
+	public void printBoard() {							//for testing
+		for(int y=0; y<intBoard[0].length; y++) {
+			for(int x=0; x<intBoard[0].length; x++)
+				System.out.print(" " + intBoard[x][y] + " ");
+			System.out.print("\n");
+		}
+	}
 
 }

@@ -24,6 +24,8 @@ public class Tree {
 		//TODO
 		//metoda do wybierania kolejnego ruchu
 		
+		root.generateChildren();
+		
 		if(root.children.size() > 30) {
 			root = root.children.get(0);
 			root.generateChildren();
@@ -47,6 +49,8 @@ public class Tree {
 	public void followMove(int x1, int y1, int x2, int y2) {
 		//metoda do œledzenia ruchu przeciwnika
 		//chyba do poprawienia
+		
+		root.generateChildren();
 		
 		for(int i=0; i<root.children.size(); i++) {
 			if(root.children.get(i).moveX1 == x1 &&

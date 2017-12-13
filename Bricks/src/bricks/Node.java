@@ -20,7 +20,13 @@ public class Node {
 					node.moveY1 = y;
 					node.moveX2 = x+1;
 					node.moveY2 = y;
-					node.board.intBoard = board.intBoard;
+					
+					node.board.intBoard = new int[board.size][board.size];
+					node.board.size = this.board.size;
+					for(int i=0; i<board.size; i++)
+						  for(int j=0; j<board.size; j++)
+							  node.board.intBoard[i][j] = this.board.intBoard[i][j];
+					
 					if(whoseMove == 1) {
 						node.board.intBoard[x][y] = 1;
 						node.board.intBoard[x+1][y] = 1;
@@ -41,7 +47,13 @@ public class Node {
 					node.moveY1 = y;
 					node.moveX2 = x;
 					node.moveY2 = y+1;
-					node.board.intBoard = board.intBoard;
+					
+					node.board.intBoard = new int[board.size][board.size];
+					node.board.size = this.board.size;
+					for(int i=0; i<board.size; i++)
+						  for(int j=0; j<board.size; j++)
+							 node.board.intBoard[i][j ]= board.intBoard[i][j];
+					
 					if(whoseMove == 1) {
 						node.board.intBoard[x][y] = 1;
 						node.board.intBoard[x][y+1] = 1;
