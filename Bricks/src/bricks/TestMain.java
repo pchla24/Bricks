@@ -11,20 +11,24 @@ public class TestMain {
 		// TODO Auto-generated method stub
 		
 		ArrayList<Integer> obst = new ArrayList<>();
+		obst.add(1);
+		obst.add(1);
+		obst.add(2);
+		obst.add(2);
+		
 
 		Tree tree = new Tree();
 		tree.root.board.init(3, obst);
-		//tree.root.board.printBoard();
+		tree.root.board.printBoard();
 		tree.root.whoseMove = 1;
 		
 		tree.root.generateChildren();
-		//System.out.println(tree.root.children.size());
-		//System.out.println("---------");
-		//tree.root.children.get(0).board.printBoard();
-		tree.root.children.get(0).generateChildren();
-		//tree.root.children.get(0).children.get(1).board.printBoard();
-		tree.root.children.get(0).children.get(1).generateChildren();
-		tree.root.children.get(0).children.get(1).children.get(1).board.printBoard();
+		System.out.println(tree.root.children.size());
+		System.out.println("---------");
+		tree.root.children.get(0).board.printBoard();
+		tree.generateLevel();
+		System.out.println("---------");
+		tree.root.children.get(0).children.get(2).board.printBoard();
 		
 		
 		
