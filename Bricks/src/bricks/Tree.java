@@ -58,7 +58,6 @@ public class Tree {
 					root.children.get(i).moveX2 == x2 &&
 					root.children.get(i).moveY2 == y2) {
 				root = root.children.get(i);
-				root.generateChildren();
 				return;
 			}
 		}
