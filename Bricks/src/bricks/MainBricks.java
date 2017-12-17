@@ -23,6 +23,7 @@ public class MainBricks {
 			tree.root.whoseMove = 1;
 			while(true) {
 				tree.generateMove();
+				communicator.writeMove(tree.root);
 				input = reader.readLine();
 				communicator.readOppMove(input);
 				tree.followMove(communicator.oppMoveX1, communicator.oppMoveY1,
@@ -36,6 +37,7 @@ public class MainBricks {
 					communicator.oppMoveX2, communicator.oppMoveY2);
 			while(true) {
 				tree.generateMove();
+				communicator.writeMove(tree.root);
 				input = reader.readLine();
 				communicator.readOppMove(input);
 				tree.followMove(communicator.oppMoveX1, communicator.oppMoveY1,
