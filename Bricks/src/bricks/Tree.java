@@ -42,7 +42,8 @@ public class Tree {
 		
 		this.setValues();
 		root = minimax.doMinimax(this);
-	
+		root.children.clear();
+		
 	} 
 			
 		
