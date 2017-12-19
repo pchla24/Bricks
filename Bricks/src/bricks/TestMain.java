@@ -21,14 +21,18 @@ public class TestMain {
 		tree.root.board.init(3, obst);
 		tree.root.board.printBoard();
 		tree.root.whoseMove = 1;
+		System.out.println("---------");
+		tree.generateMove();
+		tree.root.board.printBoard();
 		
-		tree.root.generateChildren();
+		
+		/*tree.root.generateChildren();
 		System.out.println(tree.root.children.size());
 		System.out.println("---------");
 		tree.root.children.get(0).board.printBoard();
 		tree.generateLevel();
 		System.out.println("---------");
-		tree.root.children.get(0).children.get(2).board.printBoard();
+		tree.root.children.get(0).children.get(2).board.printBoard();*/
 		
 		
 		

@@ -34,8 +34,8 @@ public class Communicator {
 	
 	public void writeMove(Node node) {
 		
-		System.out.println(node.moveX1 + 'x' + node.moveY1 + '_' + 
-				node.moveX2 + 'x' + node.moveY2);
+		System.out.println(node.moveX1 + "x" + node.moveY1 + "_" + 
+				node.moveX2 + "x" + node.moveY2);
 	}
 
 }

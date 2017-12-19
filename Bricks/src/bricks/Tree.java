@@ -15,7 +15,7 @@ public class Tree {
 		//metoda do przypisywania wartoœci liœciom drzewa
 		
 		for(int i=0; i<root.children.size(); i++) 
-			for(int j=0; j<root.children.get(i).children.size(); i++) 
+			for(int j=0; j<root.children.get(i).children.size(); j++) 
 				root.children.get(i).children.get(j).setMoveValue();
 			
 	}
