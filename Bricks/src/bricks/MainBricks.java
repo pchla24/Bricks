@@ -17,14 +17,16 @@ public class MainBricks {
 		input = reader.readLine();
 		communicator.readInit(input);
 		tree.root.board.init(communicator.size, communicator.obstacles);
-		System.out.println("ok");
+		System.out.println("OK");
 		
-		if((input = reader.readLine()).equals("start")) {
+		if((input = reader.readLine()).equals("START")) {
 			tree.root.whoseMove = 1;
 			while(true) {
 				tree.generateMove();
 				communicator.writeMove(tree.root);
 				input = reader.readLine();
+				if(input.equals("STOP"))
+					return;
 				communicator.readOppMove(input);
 				tree.followMove(communicator.oppMoveX1, communicator.oppMoveY1,
 						communicator.oppMoveX2, communicator.oppMoveY2);
@@ -39,6 +41,8 @@ public class MainBricks {
 				tree.generateMove();
 				communicator.writeMove(tree.root);
 				input = reader.readLine();
+				if(input.equals("STOP"))
+					return;
 				communicator.readOppMove(input);
 				tree.followMove(communicator.oppMoveX1, communicator.oppMoveY1,
 						communicator.oppMoveX2, communicator.oppMoveY2);
