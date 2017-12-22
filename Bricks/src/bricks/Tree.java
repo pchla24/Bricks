@@ -65,4 +65,12 @@ public class Tree {
 		
 	}
 	
+	public void updateWithOppMove(int x1, int y1, int x2, int y2) {
+		//Element alternatywneo mechanizmu
+		
+		root.board.intBoard[x1][y1] = 2;
+		root.board.intBoard[x2][y2] = 2;
+		root.whoseMove = 1;
+	}
+	
 }
