@@ -37,11 +37,10 @@ public class Node {
 						node.whoseMove = 1;
 					}
 					children.add(node);
-					/*
-					 * Ograniczenie dla alt. mechanizmu
-					if(children.size() > 40)
+					
+					if(children.size() > 25)
 						return;
-					 */
+					 
 				}
 		
 		for(int y=0; y<board.size-1; y++)						// vertical moves
@@ -69,11 +68,10 @@ public class Node {
 						node.whoseMove = 1;
 					}
 					children.add(node);
-					/*
-					 * Ograniczenie dla alt. mechanizmu
-					if(children.size() > 40)
+					
+					if(children.size() > 25)
 						return;
-					*/
+					
 				}
 	}
 	

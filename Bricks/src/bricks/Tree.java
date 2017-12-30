@@ -26,9 +26,8 @@ public class Tree {
 		
 		root.generateChildren();
 		
-		if(root.children.size() > 30) {
+		if(root.children.size() > 20) {
 			root = root.children.get(0);
-			root.generateChildren();
 			return;
 		}
 		
@@ -74,3 +73,4 @@ public class Tree {
 	}
 	
 }
+

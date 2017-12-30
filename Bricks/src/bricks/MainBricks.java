@@ -28,14 +28,14 @@ public class MainBricks {
 				if(input.equals("STOP"))
 					return;
 				communicator.readOppMove(input);
-				tree.followMove(communicator.oppMoveX1, communicator.oppMoveY1,
+				tree.updateWithOppMove(communicator.oppMoveX1, communicator.oppMoveY1,
 						communicator.oppMoveX2, communicator.oppMoveY2);
 			}
 		}
 		else {
 			tree.root.whoseMove = 2;
 			communicator.readOppMove(input);
-			tree.followMove(communicator.oppMoveX1, communicator.oppMoveY1,
+			tree.updateWithOppMove(communicator.oppMoveX1, communicator.oppMoveY1,
 					communicator.oppMoveX2, communicator.oppMoveY2);
 			while(true) {
 				tree.generateMove();
@@ -44,7 +44,7 @@ public class MainBricks {
 				if(input.equals("STOP"))
 					return;
 				communicator.readOppMove(input);
-				tree.followMove(communicator.oppMoveX1, communicator.oppMoveY1,
+				tree.updateWithOppMove(communicator.oppMoveX1, communicator.oppMoveY1,
 						communicator.oppMoveX2, communicator.oppMoveY2);
 			}
 		}
