@@ -32,6 +32,23 @@ public class Board {
 	
 	public int calculateBoardValue() {
 		//TODO
+		
+		/*int strategicPoints = 0;
+		
+		for(int y=0; y<intBoard[0].length; y++)
+			for(int x=0; x<intBoard[0].length-3; x++)
+				if(intBoard[x][y] == 0) 
+					if(intBoard[x+1][y] == 0 && intBoard[x+2][y] == 0 && intBoard[x+3][y] == 0)
+						strategicPoints++;
+		
+		for(int y=0; y<intBoard[0].length-3; y++)
+			for(int x=0; x<intBoard[0].length; x++)
+				if(intBoard[x][y] == 0) 
+					if(intBoard[x][y+1] == 0 && intBoard[x][y+2] == 0 && intBoard[x][y+3] == 0)
+						strategicPoints++;
+		
+		return strategicPoints;*/
+		
 		return 1;
 	}
 	
