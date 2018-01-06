@@ -31,7 +31,6 @@ public class Board {
 	}
 	
 	public int calculateBoardValue() {
-		//TODO
 		
 		int strategicPoints = 0;
 		
