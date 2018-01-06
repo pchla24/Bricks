@@ -33,7 +33,7 @@ public class Board {
 	public int calculateBoardValue() {
 		//TODO
 		
-		/*int strategicPoints = 0;
+		int strategicPoints = 0;
 		
 		for(int y=0; y<intBoard[0].length; y++)
 			for(int x=0; x<intBoard[0].length-3; x++)
@@ -47,9 +47,8 @@ public class Board {
 					if(intBoard[x][y+1] == 0 && intBoard[x][y+2] == 0 && intBoard[x][y+3] == 0)
 						strategicPoints++;
 		
-		return strategicPoints;*/
+		return strategicPoints;
 		
-		return 1;
 	}
 	
 	public void printBoard() {							//for testing
