@@ -12,7 +12,6 @@ public class Tree {
 	}
 	
 	public void setValues() {
-		//metoda do przypisywania wartoœci liœciom drzewa
 		
 		for(int i=0; i<root.children.size(); i++) 
 			for(int j=0; j<root.children.get(i).children.size(); j++) 
@@ -21,8 +20,6 @@ public class Tree {
 	}
 	
 	public void generateMove() {
-		//TODO
-		//metoda do wybierania kolejnego ruchu
 		
 		root.generateChildren();
 		
@@ -47,8 +44,6 @@ public class Tree {
 			
 		
 	public void followMove(int x1, int y1, int x2, int y2) {
-		//metoda do œledzenia ruchu przeciwnika
-		//chyba do poprawienia
 		
 		root.generateChildren();
 		
@@ -65,7 +60,6 @@ public class Tree {
 	}
 	
 	public void updateWithOppMove(int x1, int y1, int x2, int y2) {
-		//Element alternatywneo mechanizmu
 		
 		root.board.intBoard[x1][y1] = 2;
 		root.board.intBoard[x2][y2] = 2;

@@ -7,7 +7,6 @@ import java.io.InputStreamReader;
 public class MainBricks {
 
 	public static void main(String[] args) throws IOException {
-		// TODO Auto-generated method stub
 		
 		Communicator communicator = new Communicator();
 		Tree tree = new Tree();
